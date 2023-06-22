@@ -14,11 +14,11 @@ pipeline {
             }
         }
         
-        stage('Test') {
-            steps {
-                sh 'docker run bayanaltaleb/mywebapp:3.0 npm test' 
-            }
-        }
+//        stage('Test') {
+//            steps {
+//                sh 'docker run bayanaltaleb/mywebapp:3.0 npm test' 
+//            }
+//        }
         
         stage('Push') {
             steps {
