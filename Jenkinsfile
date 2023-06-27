@@ -29,6 +29,11 @@ pipeline {
             }
         }
         
+        stage('Deploy - port 4000') {
+            steps {
+                sh 'docker run -d -p 4000:80 bayanaltaleb/mywebapp:3.0'
+            }
+        }
 //        stage('Deploy') {
 //            steps {
 //                sh 'kubectl apply -f deployment.yaml'
