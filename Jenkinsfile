@@ -29,9 +29,9 @@ pipeline {
             }
         }
         
-        stage('Deploy - port 4000') {
+        stage('Deploy - port 5000') {
             steps {
-                sh 'docker run -d -p 3000:80 bayanaltaleb/mywebapp:3.0'
+                sh 'docker run -d -p 5000:80 bayanaltaleb/mywebapp:3.0'
             }
         }
 //        stage('Deploy') {
